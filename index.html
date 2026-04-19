@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator by Date - Find Your Exact Age in Years, Months, Days | AgeCalc</title>
+  <meta name="description" content="Free instant age calculator. Enter any birth date to calculate exact age in years, months, and days as of today or any target date. Simple, accurate, and fast.">
+  <meta name="keywords" content="age calculator, age calculator by date, how old am I, birth date calculator, exact age">
+  <meta property="og:title" content="Age Calculator by Date - Free & Instant | AgeCalc">
+  <meta property="og:description" content="Calculate your exact age in years, months, and days instantly.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://agecalc.example.com/">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AgeCalc - Age Calculator by Date",
+    "description": "Free instant age calculator. Calculate your exact age in years, months, and days.",
+    "url": "https://agecalc.example.com/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web Browser",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<!-- AD_SLOT_HEADER -->
+
+<header>
+  <div class="container header-inner">
+    <a href="/" class="logo">AgeCalc</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Free Age Calculator by Date</h1>
+      <p class="subtitle">Enter any birth date and get your exact age in years, months &amp; days — instantly.</p>
+    </section>
+
+    <!-- Calculator -->
+    <section class="calculator-wrap" aria-label="Age Calculator">
+      <div class="calculator-card">
+        <form id="calcForm" novalidate>
+
+          <div class="field-group">
+            <label for="birthDate">Date of Birth <span class="required">*</span></label>
+            <input type="date" id="birthDate" name="birthDate" required aria-required="true">
+          </div>
+
+          <div class="field-group">
+            <label for="targetDate">Calculate Age As Of <span class="optional">(default: today)</span></label>
+            <input type="date" id="targetDate" name="targetDate">
+          </div>
+
+          <div class="btn-row">
+            <button type="submit" class="btn-primary">Calculate Age</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+          </div>
+
+          <p class="error-msg" id="errorMsg" role="alert" aria-live="polite"></p>
+        </form>
+
+        <!-- Results -->
+        <div class="results hidden" id="results" aria-live="polite">
+          <div class="results-badge" id="resultsBadge" aria-label="Calculated age"></div>
+          <div class="results-breakdown" id="resultsBreakdown"></div>
+          <button class="btn-copy" id="copyBtn" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Result
+          </button>
+          <p class="copy-confirm" id="copyConfirm" role="status">Copied!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad inline -->
+    <div class="ad-inline" aria-label="Advertisement">
+      <!-- AD_SLOT_SIDEBAR -->
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <!-- How to use -->
+    <section class="info-section">
+      <h2>Calculate Your Exact Age Instantly</h2>
+      <p>Whether you need to verify your age for an official form, track your child's milestones, or just satisfy your curiosity — AgeCalc gives you a precise breakdown in seconds. No sign-up, no fees, no ads cluttering the tool itself.</p>
+
+      <h3>How to Use the Age Calculator</h3>
+      <ol class="how-to-list">
+        <li><strong>Enter your date of birth</strong> in the first field using the date picker or by typing it in.</li>
+        <li><strong>Optionally</strong>, set a target date if you want to know your age on a specific date (e.g., January 1, 2020).</li>
+        <li><strong>Click "Calculate Age"</strong> — your exact age appears instantly with a full breakdown.</li>
+        <li><strong>Copy the result</strong> with one click to paste it anywhere you need it.</li>
+      </ol>
+
+      <h3>Why Calculate Your Exact Age?</h3>
+      <p>Knowing your precise age down to the day matters more than you might think. Schools require exact ages for enrollment. Legal documents often need your age as of a specific date. Insurance and retirement calculations depend on accurate birth-to-date math. And for parents, tracking a child's age in months is essential for pediatric growth charts and school cutoff dates.</p>
+
+      <h3>Frequently Asked Questions</h3>
+      <dl class="faq">
+        <dt>How does the calculator handle leap years?</dt>
+        <dd>The calculator accounts for leap years automatically. It uses the Gregorian calendar rules, counting February 29 only in leap years.</dd>
+
+        <dt>Can I calculate age for a future date?</dt>
+        <dd>Yes. Set a target date in the future and the calculator will show how old someone will be on that date.</dd>
+
+        <dt>What if I was born on February 29?</dt>
+        <dd>The calculator handles leap day birthdays correctly. Your "legal" birthday falls on March 1 in non-leap years in most jurisdictions.</dd>
+
+        <dt>Is my data saved?</dt>
+        <dd>No. All calculations happen in your browser. We don't store, transmit, or log your birth date or any personal information.</dd>
+      </dl>
+
+      <p>Give it a try above — it's free, instant, and works on any device.</p>
+    </section>
+
+    <!-- Ad footer -->
+    <div class="ad-footer" aria-label="Advertisement">
+      <!-- AD_SLOT_FOOTER -->
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>&copy; 2026 AgeCalc. All rights reserved.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
